@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kasir</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Kasir</h2>
+
+    <!-- Tabel menampung list barang -->
+    <table id="listTabelBarang">
+      <!-- isi tabel berdasar yang ada di list -->
+      <thead>
+        <tr>
+          <th>Kode</th>
+          <th>Nama Barang</th>
+          <th>Harga</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- Input -->
+    <table id="inputan">
+      <tr>
+        <td>Masukkan Kode</td>
+        <td>:</td>
+        <td>
+          <input
+            type="text"
+            class="in"
+            id="kodeBarang"
+            placeholder="Masukkan kode barang"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Banyak Barang</td>
+        <td>:</td>
+        <td>
+          <input
+            type="text"
+            class="in"
+            id="banyakBarang"
+            placeholder="Masukkan banyak barang"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <!-- Tombol untuk memanggil fungsi tambahkanBarang -->
+          <button onclick="tambahkanBarang()">Tambah</button>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Sertakan file JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
